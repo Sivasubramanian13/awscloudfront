@@ -22,7 +22,7 @@ jobs:
     - uses: awact/cloudfront-action@master
       env:
 #         SOURCE_PATH: './public'
-#         AWS_REGION: 'us-east-1'
+        AWS_REGION: 'us-east-1'
         AWS_ACCESS_KEY_ID: ${{ secrets.ACCESSKEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRETKEY }}
         DISTRIBUTION_ID: ${{ secrets.DISTRIBUTIONS_ID }}
